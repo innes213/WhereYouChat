@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		81205F2D90CDB97EDBE229A9 /* libPods-WhereYouChat?.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4692A8A696D2795B7BA91AF7 /* libPods-WhereYouChat?.a */; };
+		B7090B741B08739D00CED699 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7090B731B08739D00CED699 /* MessageCell.swift */; };
 		B71FD0421B086008006F640A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FD0411B086008006F640A /* AppDelegate.swift */; };
 		B71FD0471B086008006F640A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B71FD0451B086008006F640A /* Main.storyboard */; };
 		B71FD0491B086008006F640A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B71FD0481B086008006F640A /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		4692A8A696D2795B7BA91AF7 /* libPods-WhereYouChat?.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhereYouChat?.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ABB098BFC2BC536EA560C83 /* Pods-WhereYouChat?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereYouChat?.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhereYouChat?/Pods-WhereYouChat?.release.xcconfig"; sourceTree = "<group>"; };
+		B7090B731B08739D00CED699 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		B71FD03C1B086008006F640A /* WhereYouChat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WhereYouChat?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B71FD0401B086008006F640A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B71FD0411B086008006F640A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 		B71FD06B1B0871B0006F640A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B7090B731B08739D00CED699 /* MessageCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71FD06A1B08635D006F640A /* LoginViewController.swift in Sources */,
+				B7090B741B08739D00CED699 /* MessageCell.swift in Sources */,
 				B71FD0421B086008006F640A /* AppDelegate.swift in Sources */,
 				B71FD0681B086342006F640A /* ChatViewController.swift in Sources */,
 				B71FD0661B086329006F640A /* GroupMapViewController.swift in Sources */,
