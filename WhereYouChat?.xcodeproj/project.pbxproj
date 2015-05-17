@@ -17,6 +17,8 @@
 		B71FD0661B086329006F640A /* GroupMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FD0651B086329006F640A /* GroupMapViewController.swift */; };
 		B71FD0681B086342006F640A /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FD0671B086342006F640A /* ChatViewController.swift */; };
 		B71FD06A1B08635D006F640A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71FD0691B08635D006F640A /* LoginViewController.swift */; };
+		B77D57161B093873007927C5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77D57151B093873007927C5 /* CoreLocation.framework */; };
+		B77D57181B094286007927C5 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77D57171B094286007927C5 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		B71FD0651B086329006F640A /* GroupMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupMapViewController.swift; sourceTree = "<group>"; };
 		B71FD0671B086342006F640A /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		B71FD0691B08635D006F640A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B77D57151B093873007927C5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B77D57171B094286007927C5 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DAB77E4E99866ACA2651E97E /* Pods-WhereYouChat?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhereYouChat?.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhereYouChat?/Pods-WhereYouChat?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77D57181B094286007927C5 /* MapKit.framework in Frameworks */,
+				B77D57161B093873007927C5 /* CoreLocation.framework in Frameworks */,
 				81205F2D90CDB97EDBE229A9 /* libPods-WhereYouChat?.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +86,8 @@
 		B33DAD0E808DE7DD8DA1567E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B77D57171B094286007927C5 /* MapKit.framework */,
+				B77D57151B093873007927C5 /* CoreLocation.framework */,
 				4692A8A696D2795B7BA91AF7 /* libPods-WhereYouChat?.a */,
 			);
 			name = Frameworks;

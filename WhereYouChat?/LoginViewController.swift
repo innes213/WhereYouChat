@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
         user.password = passwordLabel.text
         user.email = user.username
         // other fields can be set just like with PFObject
-        user["phone"] = "415-392-0202"
+        //user["location"] = CLLocation()
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in

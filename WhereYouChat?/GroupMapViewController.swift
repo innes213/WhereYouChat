@@ -10,6 +10,7 @@ import UIKit
 
 class GroupMapViewController: UIViewController {
 
+    @IBOutlet weak var groupMapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
