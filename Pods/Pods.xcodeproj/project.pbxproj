@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01E30DDDBCC5734686F41AFE /* BFTask.h in Headers */ = {isa = PBXBuildFile; fileRef = BDF571A8D4179B59123E0281 /* BFTask.h */; };
+		08F74BB44151832BD9E27946 /* PFPurchase.h in Headers */ = {isa = PBXBuildFile; fileRef = CF24AEBF23B5B4756F953616 /* PFPurchase.h */; };
+		0C30ADB0747629CD0E83C1BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEC9C7878DC688BECF01A72 /* Foundation.framework */; };
+		118681DD2ACE8F9FF744011D /* Pods-WhereYouChat?-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D65588AFEF77FED503EF0A1 /* Pods-WhereYouChat?-dummy.m */; };
+		1213E4DD26858E8CD773677F /* PFACL.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BE4A7628A1DE54C1E97D997 /* PFACL.h */; };
+		16865D71C4DF4D89371B4F7E /* BFTaskCompletionSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D21BB9E1013D998322DF7ED /* BFTaskCompletionSource.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1AEB1B2A4A5B535ECC435601 /* PFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 193F8E2E804336B8284D6525 /* PFNetworkActivityIndicatorManager.h */; };
+		1D70A17FEF40C30AE842B800 /* BoltsVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B954218D3DE14437DD816E5 /* BoltsVersion.h */; };
+		1DFC278EF6DAA60B4A3C7917 /* BFExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = F381A683CA45AC6BBD74B82E /* BFExecutor.h */; };
+		20EBEF8EEBF26AB1771EF1DF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CD14D747C6B73EF661DBF9 /* AudioToolbox.framework */; };
+		2638CEEF69FFC5AAD5A30BF3 /* BFExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AECCD3F08DBC753F5DC126 /* BFExecutor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		273E3736DF350AAFB189150F /* PFPush.h in Headers */ = {isa = PBXBuildFile; fileRef = 293ABF376227ED2A60F63F5F /* PFPush.h */; };
+		29219EAFE6605BF40DB918D8 /* PFTwitterUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC64B943CE2D148152D255E /* PFTwitterUtils.h */; };
+		2F8C4C9FB22A4921007FFFF7 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A40B5A2AA8F54B7BFBAC0 /* Empty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		379A584FA422C89A0269865A /* Bolts.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CC8CDC86D482EBD2D9457 /* Bolts.h */; };
+		3925BC6C1BBA1D265C6D625F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEC9C7878DC688BECF01A72 /* Foundation.framework */; };
+		40DC8B08C11FDAD10EF6BE80 /* Pods-WhereYouChat?-Parse-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDF91856536EA9FB8169DCA /* Pods-WhereYouChat?-Parse-dummy.m */; };
+		483457C44AD950F237DA5622 /* PFObject+Subclass.h in Headers */ = {isa = PBXBuildFile; fileRef = 11D5783029E89C77E62E122B /* PFObject+Subclass.h */; };
+		4CD209D1446948653E9DF230 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 993AA68CA4C833577399F766 /* StoreKit.framework */; };
+		4D0659432574849C0C3A6AA9 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C40E03C3EB877BE31B372FFC /* MobileCoreServices.framework */; };
+		54487D7BE328ADA3D835C140 /* BFTask.m in Sources */ = {isa = PBXBuildFile; fileRef = C97B1E02BC0B5BAA2B59F987 /* BFTask.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		637CF85A8D33E919A05CDBC4 /* PFSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 76F542221096AAEB14F2FAA5 /* PFSession.h */; };
+		6A76D34B5FFF06509D8E0741 /* PFAnonymousUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA0F3C0B54778E37413BEFA /* PFAnonymousUtils.h */; };
+		7057A61336A3F9CAF76FB058 /* PFNullability.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB7EA7535F065A1B0362C1E /* PFNullability.h */; };
+		76FE4D99A0B4C61ED04CD126 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5008592C3D76302B93BBE612 /* CoreLocation.framework */; };
+		7F06FB685CDF9E82DF9D90F6 /* PFSubclassing.h in Headers */ = {isa = PBXBuildFile; fileRef = 074D0BA56F846FB4DF337200 /* PFSubclassing.h */; };
+		8C5CFF5E0B33A5949F7B44DB /* PFConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F33F9260F6C1C691D1B25E /* PFConfig.h */; };
+		93B3D388EE71AD9998DE597C /* Bolts.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E40A99FC7161C69F48DEDE /* Bolts.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		976406BF072A7C18D2DC7C2C /* PFCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE2AFDC13274A4D92340881 /* PFCloud.h */; };
+		9B2A5AB28E14F83811205610 /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6690995AFFC3AF50EF0B5A /* Parse.h */; };
+		9DE962AE9C6A60035C9D5F54 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57613054463CF980DF0EE61D /* CFNetwork.framework */; };
+		ABAC6EABAC339AFAB412340E /* PFQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 44AAD4FAF4221B883C6C1055 /* PFQuery.h */; };
+		AC59A9E0475FC192FD0A13C4 /* PFRelation.h in Headers */ = {isa = PBXBuildFile; fileRef = DB47AF24422A818EE64E485B /* PFRelation.h */; };
+		AF06361662DDB0AAC1ABB814 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DF72ACF20141C9C74D91AB /* QuartzCore.framework */; };
+		BDA2CA61CD406B176222A086 /* PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = CB6D31FD81F18EB06C6E26F4 /* PFUser.h */; };
+		C42ACF0F6A5454D0EC1A66B4 /* PFGeoPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = AD04A5133F69C6C76B674F26 /* PFGeoPoint.h */; };
+		CA446693E5C2E7416FCCD96F /* PFAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E6DD66E3674C95D4444909 /* PFAnalytics.h */; };
+		CAA6857244D3DA7CC26F06EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEC9C7878DC688BECF01A72 /* Foundation.framework */; };
+		CAD841AE8B8F490892BAC277 /* PFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C8C00CE88F537D7CB6957F /* PFFile.h */; };
+		D45B85FC045AF4CF0A6C74A0 /* PFConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 02F0FA6DF026750B5DE2DA73 /* PFConstants.h */; };
+		DA5E35DA6E1B23A5E9A7BB20 /* PF_Twitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0155D4C32B42A075F7F6641C /* PF_Twitter.h */; };
+		DB6DC5FC6F03670C5AD4A68E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74212E177F3E4BF303332F9D /* CoreGraphics.framework */; };
+		E02F5ED75EA6212B38E40324 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2796C3928834460F23152599 /* Security.framework */; };
+		E200FB3434B9D580C0729CA8 /* PFRole.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BDA988EC368F8902230EC40 /* PFRole.h */; };
+		E787E36821F00778BD9C67D0 /* BFTaskCompletionSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8067729889B216AD94A18E65 /* BFTaskCompletionSource.h */; };
+		EF407451DC49319D967E7DD0 /* Pods-WhereYouChat?-Bolts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7F5BF3B60D251C9BB5E259 /* Pods-WhereYouChat?-Bolts-dummy.m */; };
+		F12A0601BFE915FECCF53FF0 /* PFProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 26FD22E9BBF604BFD2BE0F81 /* PFProduct.h */; };
+		F54AF62943128410DCFAC749 /* PFInstallation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A53BE31B6303C0BE93DD35E /* PFInstallation.h */; };
+		F63D55B0D931E958137D0A34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45F4492785960945E2939CD2 /* SystemConfiguration.framework */; };
+		F83F6A7479181042A6568618 /* PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 46940A60A74CEB99E198D275 /* PFObject.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		565E6BABA3FCA4DEE8C27B99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B7EC242B0AE193FCD594E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2F0B5D92471E692F15DDA64;
+			remoteInfo = "Pods-WhereYouChat?-Bolts";
+		};
+		7DBAB31550712ACB743128F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B7EC242B0AE193FCD594E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 278B2B4C2990851455BEC462;
+			remoteInfo = "Pods-WhereYouChat?-Parse";
+		};
+		966452DC017F7F6093A21792 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B7EC242B0AE193FCD594E7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2F0B5D92471E692F15DDA64;
+			remoteInfo = "Pods-WhereYouChat?-Bolts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0155D4C32B42A075F7F6641C /* PF_Twitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PF_Twitter.h; path = Parse.framework/Headers/PF_Twitter.h; sourceTree = "<group>"; };
+		02F0FA6DF026750B5DE2DA73 /* PFConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConstants.h; path = Parse.framework/Headers/PFConstants.h; sourceTree = "<group>"; };
+		073936025255E2814DFD12CD /* libParse.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libParse.a; sourceTree = "<group>"; };
+		074D0BA56F846FB4DF337200 /* PFSubclassing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSubclassing.h; path = Parse.framework/Headers/PFSubclassing.h; sourceTree = "<group>"; };
+		0EC64B943CE2D148152D255E /* PFTwitterUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFTwitterUtils.h; path = Parse.framework/Headers/PFTwitterUtils.h; sourceTree = "<group>"; };
+		0FB7EA7535F065A1B0362C1E /* PFNullability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNullability.h; path = Parse.framework/Headers/PFNullability.h; sourceTree = "<group>"; };
+		1144E45F4ABB4CCF115D6BF7 /* Pods-WhereYouChat?-Bolts-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhereYouChat?-Bolts-Private.xcconfig"; sourceTree = "<group>"; };
+		11D5783029E89C77E62E122B /* PFObject+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PFObject+Subclass.h"; path = "Parse.framework/Headers/PFObject+Subclass.h"; sourceTree = "<group>"; };
+		193F8E2E804336B8284D6525 /* PFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFNetworkActivityIndicatorManager.h; path = Parse.framework/Headers/PFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		19E50CE24947EE3643BB8AF4 /* Pods-WhereYouChat?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhereYouChat?.release.xcconfig"; sourceTree = "<group>"; };
+		1A6690995AFFC3AF50EF0B5A /* Parse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Parse.h; path = Parse.framework/Headers/Parse.h; sourceTree = "<group>"; };
+		1A8E7F30320B6AB5BA00B64C /* libPods-WhereYouChat?-Bolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhereYouChat?-Bolts.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		267E756207F6A7E8B72145C7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		26FD22E9BBF604BFD2BE0F81 /* PFProduct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFProduct.h; path = Parse.framework/Headers/PFProduct.h; sourceTree = "<group>"; };
+		2796C3928834460F23152599 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		293ABF376227ED2A60F63F5F /* PFPush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPush.h; path = Parse.framework/Headers/PFPush.h; sourceTree = "<group>"; };
+		2B954218D3DE14437DD816E5 /* BoltsVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BoltsVersion.h; path = Bolts/Common/BoltsVersion.h; sourceTree = "<group>"; };
+		2D65588AFEF77FED503EF0A1 /* Pods-WhereYouChat?-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhereYouChat?-dummy.m"; sourceTree = "<group>"; };
+		310E038FA22F7C269AD8B0F5 /* Pods-WhereYouChat?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhereYouChat?.debug.xcconfig"; sourceTree = "<group>"; };
+		38E6DD66E3674C95D4444909 /* PFAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnalytics.h; path = Parse.framework/Headers/PFAnalytics.h; sourceTree = "<group>"; };
+		3EDF91856536EA9FB8169DCA /* Pods-WhereYouChat?-Parse-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhereYouChat?-Parse-dummy.m"; sourceTree = "<group>"; };
+		44AAD4FAF4221B883C6C1055 /* PFQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFQuery.h; path = Parse.framework/Headers/PFQuery.h; sourceTree = "<group>"; };
+		45F4492785960945E2939CD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		46940A60A74CEB99E198D275 /* PFObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFObject.h; path = Parse.framework/Headers/PFObject.h; sourceTree = "<group>"; };
+		4BE4A7628A1DE54C1E97D997 /* PFACL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFACL.h; path = Parse.framework/Headers/PFACL.h; sourceTree = "<group>"; };
+		4D21BB9E1013D998322DF7ED /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		5008592C3D76302B93BBE612 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		57613054463CF980DF0EE61D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		5D1A40B5A2AA8F54B7BFBAC0 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		6CEC9C7878DC688BECF01A72 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74212E177F3E4BF303332F9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		76F542221096AAEB14F2FAA5 /* PFSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFSession.h; path = Parse.framework/Headers/PFSession.h; sourceTree = "<group>"; };
+		7A53BE31B6303C0BE93DD35E /* PFInstallation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFInstallation.h; path = Parse.framework/Headers/PFInstallation.h; sourceTree = "<group>"; };
+		7BDA988EC368F8902230EC40 /* PFRole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRole.h; path = Parse.framework/Headers/PFRole.h; sourceTree = "<group>"; };
+		8067729889B216AD94A18E65 /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
+		81C8C00CE88F537D7CB6957F /* PFFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFFile.h; path = Parse.framework/Headers/PFFile.h; sourceTree = "<group>"; };
+		8880F5002B138B14C63310B2 /* Pods-WhereYouChat?-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhereYouChat?-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8B870BDDA94B0B5EA7B1923F /* libPods-WhereYouChat?.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhereYouChat?.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA0F3C0B54778E37413BEFA /* PFAnonymousUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFAnonymousUtils.h; path = Parse.framework/Headers/PFAnonymousUtils.h; sourceTree = "<group>"; };
+		8BE2AFDC13274A4D92340881 /* PFCloud.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFCloud.h; path = Parse.framework/Headers/PFCloud.h; sourceTree = "<group>"; };
+		993AA68CA4C833577399F766 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		A15599083CF74CFE54061231 /* Pods-WhereYouChat?-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhereYouChat?-environment.h"; sourceTree = "<group>"; };
+		A5CD14D747C6B73EF661DBF9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		AD04A5133F69C6C76B674F26 /* PFGeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFGeoPoint.h; path = Parse.framework/Headers/PFGeoPoint.h; sourceTree = "<group>"; };
+		ADB62086B3045A50DB9CBCFC /* libPods-WhereYouChat?-Parse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhereYouChat?-Parse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF0C96AA366A0554E338564 /* Pods-WhereYouChat?-Bolts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhereYouChat?-Bolts.xcconfig"; sourceTree = "<group>"; };
+		B7E40A99FC7161C69F48DEDE /* Bolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bolts.m; path = Bolts/Common/Bolts.m; sourceTree = "<group>"; };
+		BA0CC8CDC86D482EBD2D9457 /* Bolts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bolts.h; path = Bolts/Common/Bolts.h; sourceTree = "<group>"; };
+		BDF571A8D4179B59123E0281 /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
+		C40E03C3EB877BE31B372FFC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		C7DF72ACF20141C9C74D91AB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C97B1E02BC0B5BAA2B59F987 /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
+		CB6D31FD81F18EB06C6E26F4 /* PFUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFUser.h; path = Parse.framework/Headers/PFUser.h; sourceTree = "<group>"; };
+		CD1CA9398F171A7194AD3C72 /* Pods-WhereYouChat?-Parse-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhereYouChat?-Parse-Private.xcconfig"; sourceTree = "<group>"; };
+		CF24AEBF23B5B4756F953616 /* PFPurchase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFPurchase.h; path = Parse.framework/Headers/PFPurchase.h; sourceTree = "<group>"; };
+		CF7F5BF3B60D251C9BB5E259 /* Pods-WhereYouChat?-Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhereYouChat?-Bolts-dummy.m"; sourceTree = "<group>"; };
+		D4AECCD3F08DBC753F5DC126 /* BFExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFExecutor.m; path = Bolts/Common/BFExecutor.m; sourceTree = "<group>"; };
+		DB47AF24422A818EE64E485B /* PFRelation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFRelation.h; path = Parse.framework/Headers/PFRelation.h; sourceTree = "<group>"; };
+		E04099D7AE99066F54159057 /* Pods-WhereYouChat?-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhereYouChat?-acknowledgements.plist"; sourceTree = "<group>"; };
+		E7F33F9260F6C1C691D1B25E /* PFConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PFConfig.h; path = Parse.framework/Headers/PFConfig.h; sourceTree = "<group>"; };
+		E9CC92498B0F6B7F4D48D8F1 /* Pods-WhereYouChat?-Parse-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhereYouChat?-Parse-prefix.pch"; sourceTree = "<group>"; };
+		EC229E6C7D0C538BF6E92A24 /* Pods-WhereYouChat?-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhereYouChat?-resources.sh"; sourceTree = "<group>"; };
+		F24E9B610354A7AAE6D28316 /* Pods-WhereYouChat?-Parse.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhereYouChat?-Parse.xcconfig"; sourceTree = "<group>"; };
+		F381A683CA45AC6BBD74B82E /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
+		FBBE380559572F527728F70F /* Pods-WhereYouChat?-Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhereYouChat?-Bolts-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0EC4E39B136AA5F9AC9E753F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20EBEF8EEBF26AB1771EF1DF /* AudioToolbox.framework in Frameworks */,
+				9DE962AE9C6A60035C9D5F54 /* CFNetwork.framework in Frameworks */,
+				DB6DC5FC6F03670C5AD4A68E /* CoreGraphics.framework in Frameworks */,
+				76FE4D99A0B4C61ED04CD126 /* CoreLocation.framework in Frameworks */,
+				3925BC6C1BBA1D265C6D625F /* Foundation.framework in Frameworks */,
+				4D0659432574849C0C3A6AA9 /* MobileCoreServices.framework in Frameworks */,
+				AF06361662DDB0AAC1ABB814 /* QuartzCore.framework in Frameworks */,
+				E02F5ED75EA6212B38E40324 /* Security.framework in Frameworks */,
+				4CD209D1446948653E9DF230 /* StoreKit.framework in Frameworks */,
+				F63D55B0D931E958137D0A34 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61B87D0AE7380E56AA217976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C30ADB0747629CD0E83C1BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87A633E12952F0FDDEED6598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA6857244D3DA7CC26F06EB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D097271BCD604C962100319 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				434EAF122740504D5660B72B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		36F83BED43F5FC122A60E65D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				073936025255E2814DFD12CD /* libParse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		380C9C01763F64790D3F4DEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B870BDDA94B0B5EA7B1923F /* libPods-WhereYouChat?.a */,
+				1A8E7F30320B6AB5BA00B64C /* libPods-WhereYouChat?-Bolts.a */,
+				ADB62086B3045A50DB9CBCFC /* libPods-WhereYouChat?-Parse.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3EF8410A8430C51C51066E86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4D1E3949BCAF1A1F143858E /* Bolts */,
+				46A9AE2EB2E8AB6682228B5B /* Parse */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		434EAF122740504D5660B72B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A5CD14D747C6B73EF661DBF9 /* AudioToolbox.framework */,
+				57613054463CF980DF0EE61D /* CFNetwork.framework */,
+				74212E177F3E4BF303332F9D /* CoreGraphics.framework */,
+				5008592C3D76302B93BBE612 /* CoreLocation.framework */,
+				6CEC9C7878DC688BECF01A72 /* Foundation.framework */,
+				C40E03C3EB877BE31B372FFC /* MobileCoreServices.framework */,
+				C7DF72ACF20141C9C74D91AB /* QuartzCore.framework */,
+				2796C3928834460F23152599 /* Security.framework */,
+				993AA68CA4C833577399F766 /* StoreKit.framework */,
+				45F4492785960945E2939CD2 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		46A9AE2EB2E8AB6682228B5B /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				5D1A40B5A2AA8F54B7BFBAC0 /* Empty.m */,
+				4BE4A7628A1DE54C1E97D997 /* PFACL.h */,
+				38E6DD66E3674C95D4444909 /* PFAnalytics.h */,
+				8BA0F3C0B54778E37413BEFA /* PFAnonymousUtils.h */,
+				8BE2AFDC13274A4D92340881 /* PFCloud.h */,
+				E7F33F9260F6C1C691D1B25E /* PFConfig.h */,
+				02F0FA6DF026750B5DE2DA73 /* PFConstants.h */,
+				81C8C00CE88F537D7CB6957F /* PFFile.h */,
+				AD04A5133F69C6C76B674F26 /* PFGeoPoint.h */,
+				7A53BE31B6303C0BE93DD35E /* PFInstallation.h */,
+				193F8E2E804336B8284D6525 /* PFNetworkActivityIndicatorManager.h */,
+				0FB7EA7535F065A1B0362C1E /* PFNullability.h */,
+				46940A60A74CEB99E198D275 /* PFObject.h */,
+				11D5783029E89C77E62E122B /* PFObject+Subclass.h */,
+				26FD22E9BBF604BFD2BE0F81 /* PFProduct.h */,
+				CF24AEBF23B5B4756F953616 /* PFPurchase.h */,
+				293ABF376227ED2A60F63F5F /* PFPush.h */,
+				44AAD4FAF4221B883C6C1055 /* PFQuery.h */,
+				DB47AF24422A818EE64E485B /* PFRelation.h */,
+				7BDA988EC368F8902230EC40 /* PFRole.h */,
+				76F542221096AAEB14F2FAA5 /* PFSession.h */,
+				074D0BA56F846FB4DF337200 /* PFSubclassing.h */,
+				0EC64B943CE2D148152D255E /* PFTwitterUtils.h */,
+				CB6D31FD81F18EB06C6E26F4 /* PFUser.h */,
+				0155D4C32B42A075F7F6641C /* PF_Twitter.h */,
+				1A6690995AFFC3AF50EF0B5A /* Parse.h */,
+				36F83BED43F5FC122A60E65D /* Frameworks */,
+				BEAE56064FD7D89DA74D508F /* Support Files */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		46C9FE8AE1123A9BD4BBA598 /* Pods-WhereYouChat? */ = {
+			isa = PBXGroup;
+			children = (
+				8880F5002B138B14C63310B2 /* Pods-WhereYouChat?-acknowledgements.markdown */,
+				E04099D7AE99066F54159057 /* Pods-WhereYouChat?-acknowledgements.plist */,
+				2D65588AFEF77FED503EF0A1 /* Pods-WhereYouChat?-dummy.m */,
+				A15599083CF74CFE54061231 /* Pods-WhereYouChat?-environment.h */,
+				EC229E6C7D0C538BF6E92A24 /* Pods-WhereYouChat?-resources.sh */,
+				310E038FA22F7C269AD8B0F5 /* Pods-WhereYouChat?.debug.xcconfig */,
+				19E50CE24947EE3643BB8AF4 /* Pods-WhereYouChat?.release.xcconfig */,
+			);
+			name = "Pods-WhereYouChat?";
+			path = "Target Support Files/Pods-WhereYouChat?";
+			sourceTree = "<group>";
+		};
+		498B705685127372D718D973 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				F381A683CA45AC6BBD74B82E /* BFExecutor.h */,
+				D4AECCD3F08DBC753F5DC126 /* BFExecutor.m */,
+				BDF571A8D4179B59123E0281 /* BFTask.h */,
+				C97B1E02BC0B5BAA2B59F987 /* BFTask.m */,
+				8067729889B216AD94A18E65 /* BFTaskCompletionSource.h */,
+				4D21BB9E1013D998322DF7ED /* BFTaskCompletionSource.m */,
+				BA0CC8CDC86D482EBD2D9457 /* Bolts.h */,
+				B7E40A99FC7161C69F48DEDE /* Bolts.m */,
+				2B954218D3DE14437DD816E5 /* BoltsVersion.h */,
+			);
+			name = Tasks;
+			sourceTree = "<group>";
+		};
+		66695840AE9D720B256B2C4D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46C9FE8AE1123A9BD4BBA598 /* Pods-WhereYouChat? */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BEAE56064FD7D89DA74D508F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F24E9B610354A7AAE6D28316 /* Pods-WhereYouChat?-Parse.xcconfig */,
+				CD1CA9398F171A7194AD3C72 /* Pods-WhereYouChat?-Parse-Private.xcconfig */,
+				3EDF91856536EA9FB8169DCA /* Pods-WhereYouChat?-Parse-dummy.m */,
+				E9CC92498B0F6B7F4D48D8F1 /* Pods-WhereYouChat?-Parse-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-WhereYouChat?-Parse";
+			sourceTree = "<group>";
+		};
+		D2169609745E7FA4BFF385D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADF0C96AA366A0554E338564 /* Pods-WhereYouChat?-Bolts.xcconfig */,
+				1144E45F4ABB4CCF115D6BF7 /* Pods-WhereYouChat?-Bolts-Private.xcconfig */,
+				CF7F5BF3B60D251C9BB5E259 /* Pods-WhereYouChat?-Bolts-dummy.m */,
+				FBBE380559572F527728F70F /* Pods-WhereYouChat?-Bolts-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-WhereYouChat?-Bolts";
+			sourceTree = "<group>";
+		};
+		D4D1E3949BCAF1A1F143858E /* Bolts */ = {
+			isa = PBXGroup;
+			children = (
+				D2169609745E7FA4BFF385D5 /* Support Files */,
+				498B705685127372D718D973 /* Tasks */,
+			);
+			path = Bolts;
+			sourceTree = "<group>";
+		};
+		DA03C0C1159D401D0AB087FB = {
+			isa = PBXGroup;
+			children = (
+				267E756207F6A7E8B72145C7 /* Podfile */,
+				0D097271BCD604C962100319 /* Frameworks */,
+				3EF8410A8430C51C51066E86 /* Pods */,
+				380C9C01763F64790D3F4DEE /* Products */,
+				66695840AE9D720B256B2C4D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		086FA90180EB262060BF6512 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DFC278EF6DAA60B4A3C7917 /* BFExecutor.h in Headers */,
+				01E30DDDBCC5734686F41AFE /* BFTask.h in Headers */,
+				E787E36821F00778BD9C67D0 /* BFTaskCompletionSource.h in Headers */,
+				379A584FA422C89A0269865A /* Bolts.h in Headers */,
+				1D70A17FEF40C30AE842B800 /* BoltsVersion.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C83902CEFDF6EDB760184007 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1213E4DD26858E8CD773677F /* PFACL.h in Headers */,
+				CA446693E5C2E7416FCCD96F /* PFAnalytics.h in Headers */,
+				6A76D34B5FFF06509D8E0741 /* PFAnonymousUtils.h in Headers */,
+				976406BF072A7C18D2DC7C2C /* PFCloud.h in Headers */,
+				8C5CFF5E0B33A5949F7B44DB /* PFConfig.h in Headers */,
+				D45B85FC045AF4CF0A6C74A0 /* PFConstants.h in Headers */,
+				CAD841AE8B8F490892BAC277 /* PFFile.h in Headers */,
+				C42ACF0F6A5454D0EC1A66B4 /* PFGeoPoint.h in Headers */,
+				F54AF62943128410DCFAC749 /* PFInstallation.h in Headers */,
+				1AEB1B2A4A5B535ECC435601 /* PFNetworkActivityIndicatorManager.h in Headers */,
+				7057A61336A3F9CAF76FB058 /* PFNullability.h in Headers */,
+				483457C44AD950F237DA5622 /* PFObject+Subclass.h in Headers */,
+				F83F6A7479181042A6568618 /* PFObject.h in Headers */,
+				F12A0601BFE915FECCF53FF0 /* PFProduct.h in Headers */,
+				08F74BB44151832BD9E27946 /* PFPurchase.h in Headers */,
+				273E3736DF350AAFB189150F /* PFPush.h in Headers */,
+				ABAC6EABAC339AFAB412340E /* PFQuery.h in Headers */,
+				AC59A9E0475FC192FD0A13C4 /* PFRelation.h in Headers */,
+				E200FB3434B9D580C0729CA8 /* PFRole.h in Headers */,
+				637CF85A8D33E919A05CDBC4 /* PFSession.h in Headers */,
+				7F06FB685CDF9E82DF9D90F6 /* PFSubclassing.h in Headers */,
+				29219EAFE6605BF40DB918D8 /* PFTwitterUtils.h in Headers */,
+				BDA2CA61CD406B176222A086 /* PFUser.h in Headers */,
+				DA5E35DA6E1B23A5E9A7BB20 /* PF_Twitter.h in Headers */,
+				9B2A5AB28E14F83811205610 /* Parse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		278B2B4C2990851455BEC462 /* Pods-WhereYouChat?-Parse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAB6A11D401B09B33B0C81EC /* Build configuration list for PBXNativeTarget "Pods-WhereYouChat?-Parse" */;
+			buildPhases = (
+				3431181BCD0B2071801C1B8A /* Sources */,
+				0EC4E39B136AA5F9AC9E753F /* Frameworks */,
+				C83902CEFDF6EDB760184007 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D7A4DBD8AC65397901FE44A /* PBXTargetDependency */,
+			);
+			name = "Pods-WhereYouChat?-Parse";
+			productName = "Pods-WhereYouChat?-Parse";
+			productReference = ADB62086B3045A50DB9CBCFC /* libPods-WhereYouChat?-Parse.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B471B67377AECC5EEA04FE13 /* Pods-WhereYouChat? */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143499DDDC603B1C1A86C6D9 /* Build configuration list for PBXNativeTarget "Pods-WhereYouChat?" */;
+			buildPhases = (
+				BE66400EFD332B220332C058 /* Sources */,
+				87A633E12952F0FDDEED6598 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC5B7CA245730F7ADF26110 /* PBXTargetDependency */,
+				397D4A289EA5B2A06242C165 /* PBXTargetDependency */,
+			);
+			name = "Pods-WhereYouChat?";
+			productName = "Pods-WhereYouChat?";
+			productReference = 8B870BDDA94B0B5EA7B1923F /* libPods-WhereYouChat?.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F2F0B5D92471E692F15DDA64 /* Pods-WhereYouChat?-Bolts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB5753FE1AFE66D2EDD7272B /* Build configuration list for PBXNativeTarget "Pods-WhereYouChat?-Bolts" */;
+			buildPhases = (
+				4951CDFDA23B57DA8ED158EE /* Sources */,
+				61B87D0AE7380E56AA217976 /* Frameworks */,
+				086FA90180EB262060BF6512 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-WhereYouChat?-Bolts";
+			productName = "Pods-WhereYouChat?-Bolts";
+			productReference = 1A8E7F30320B6AB5BA00B64C /* libPods-WhereYouChat?-Bolts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B7EC242B0AE193FCD594E7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 35D7C2462D6DB5712B016F41 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA03C0C1159D401D0AB087FB;
+			productRefGroup = 380C9C01763F64790D3F4DEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B471B67377AECC5EEA04FE13 /* Pods-WhereYouChat? */,
+				F2F0B5D92471E692F15DDA64 /* Pods-WhereYouChat?-Bolts */,
+				278B2B4C2990851455BEC462 /* Pods-WhereYouChat?-Parse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3431181BCD0B2071801C1B8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F8C4C9FB22A4921007FFFF7 /* Empty.m in Sources */,
+				40DC8B08C11FDAD10EF6BE80 /* Pods-WhereYouChat?-Parse-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4951CDFDA23B57DA8ED158EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2638CEEF69FFC5AAD5A30BF3 /* BFExecutor.m in Sources */,
+				54487D7BE328ADA3D835C140 /* BFTask.m in Sources */,
+				16865D71C4DF4D89371B4F7E /* BFTaskCompletionSource.m in Sources */,
+				93B3D388EE71AD9998DE597C /* Bolts.m in Sources */,
+				EF407451DC49319D967E7DD0 /* Pods-WhereYouChat?-Bolts-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE66400EFD332B220332C058 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				118681DD2ACE8F9FF744011D /* Pods-WhereYouChat?-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		397D4A289EA5B2A06242C165 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WhereYouChat?-Parse";
+			target = 278B2B4C2990851455BEC462 /* Pods-WhereYouChat?-Parse */;
+			targetProxy = 7DBAB31550712ACB743128F0 /* PBXContainerItemProxy */;
+		};
+		8D7A4DBD8AC65397901FE44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WhereYouChat?-Bolts";
+			target = F2F0B5D92471E692F15DDA64 /* Pods-WhereYouChat?-Bolts */;
+			targetProxy = 966452DC017F7F6093A21792 /* PBXContainerItemProxy */;
+		};
+		FBC5B7CA245730F7ADF26110 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WhereYouChat?-Bolts";
+			target = F2F0B5D92471E692F15DDA64 /* Pods-WhereYouChat?-Bolts */;
+			targetProxy = 565E6BABA3FCA4DEE8C27B99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		16764FB3AEDF1A36543C6FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1144E45F4ABB4CCF115D6BF7 /* Pods-WhereYouChat?-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-WhereYouChat?-Bolts/Pods-WhereYouChat?-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2EFD4AC8D993D5F211266E91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48AB0D85811EA060E030C102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1CA9398F171A7194AD3C72 /* Pods-WhereYouChat?-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-WhereYouChat?-Parse/Pods-WhereYouChat?-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		49A2CA2E8AD4A212B9777727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19E50CE24947EE3643BB8AF4 /* Pods-WhereYouChat?.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A47DBEF1E89D014643A157DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310E038FA22F7C269AD8B0F5 /* Pods-WhereYouChat?.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A79A7974F9F2600F1A6AABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD1CA9398F171A7194AD3C72 /* Pods-WhereYouChat?-Parse-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-WhereYouChat?-Parse/Pods-WhereYouChat?-Parse-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BA874944681A79998C32A6E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1144E45F4ABB4CCF115D6BF7 /* Pods-WhereYouChat?-Bolts-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-WhereYouChat?-Bolts/Pods-WhereYouChat?-Bolts-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D390D64EEAA88905A43216A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143499DDDC603B1C1A86C6D9 /* Build configuration list for PBXNativeTarget "Pods-WhereYouChat?" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A47DBEF1E89D014643A157DE /* Debug */,
+				49A2CA2E8AD4A212B9777727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35D7C2462D6DB5712B016F41 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D390D64EEAA88905A43216A7 /* Debug */,
+				2EFD4AC8D993D5F211266E91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAB6A11D401B09B33B0C81EC /* Build configuration list for PBXNativeTarget "Pods-WhereYouChat?-Parse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A79A7974F9F2600F1A6AABE4 /* Debug */,
+				48AB0D85811EA060E030C102 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB5753FE1AFE66D2EDD7272B /* Build configuration list for PBXNativeTarget "Pods-WhereYouChat?-Bolts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA874944681A79998C32A6E4 /* Debug */,
+				16764FB3AEDF1A36543C6FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B7EC242B0AE193FCD594E7E /* Project object */;
+}
