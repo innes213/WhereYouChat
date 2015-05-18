@@ -11,7 +11,9 @@ import UIKit
 class MessageCell: UITableViewCell {
     
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var profileImage: UIImageView!
     
+    //TODO: instead of String, use Message object
     var message: String? {
         didSet {
             if let message = message {

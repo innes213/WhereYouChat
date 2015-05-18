@@ -39,8 +39,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-62-8qI">
-                                <rect key="frame" x="112" y="106" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="bob@bob.com" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAb-62-8qI">
+                                <rect key="frame" x="102" y="108" width="116" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -121,6 +121,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="messageLabel" destination="7Dz-1c-2hy" id="MmI-hL-f9N"/>
+                                            <outlet property="profileImage" destination="W6a-wo-dsd" id="1jC-hn-fkZ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -145,20 +146,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jKH-1U-54Y">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKH-1U-54Y">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="jKH-1U-54Y" secondAttribute="bottom" id="Jtk-8n-6u5"/>
-                            <constraint firstItem="jKH-1U-54Y" firstAttribute="top" secondItem="cwT-AZ-rUd" secondAttribute="top" id="m5T-j5-ZqI"/>
-                            <constraint firstAttribute="trailing" secondItem="jKH-1U-54Y" secondAttribute="trailing" id="mR6-T8-EtM"/>
-                            <constraint firstItem="jKH-1U-54Y" firstAttribute="leading" secondItem="cwT-AZ-rUd" secondAttribute="leading" id="vZD-Mw-LZi"/>
-                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="groupMapView" destination="jKH-1U-54Y" id="Z0V-Sl-wqX"/>
+                        <outlet property="mapView" destination="jKH-1U-54Y" id="Z7d-BL-PBr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ids-d1-qoC" userLabel="First Responder" sceneMemberID="firstResponder"/>

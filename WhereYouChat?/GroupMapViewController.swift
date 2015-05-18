@@ -8,13 +8,54 @@
 
 import UIKit
 
-class GroupMapViewController: UIViewController {
+class GroupMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+    var locationManager = locMan
+    var groupDestination: CLLocationCoordinate2D?
+    
+    @IBOutlet weak var mapView: MKMapView!
+    /*
+    init() {
+        super.init(nibName: nil,bundle: nil)
+        // Start location services
+        locationManager = CLLocationManager()
+        locationManager.requestAlwaysAuthorization()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        
+        // Set a movement threshold for new events.
+        locationManager.distanceFilter = 100 // meters
+        locationManager.startUpdatingLocation()
+    
+    }
 
-    @IBOutlet weak var groupMapView: MKMapView!
+    required init(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
+        super.init(nibName: nil,bundle: nil)
+        println("init(coder)")
+    }
+*/
+    override func loadView() {
+        super.loadView()
+        println("loadView")
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("viewDidLoad")
+        
+        locationManager!.delegate = self
+        locationManager!.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        
+        // Set a movement threshold for new events.
+        locationManager!.distanceFilter = 100 // meters
+       /* if (locationManager!.respondsToSelector("requestAlwaysAuthorization")) {
+            locationManager!.requestAlwaysAuthorization()
+            println("requesting location auth")
+        }
+*/
+        //locationManager!.startUpdatingLocation()
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,5 +73,15 @@ class GroupMapViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
+    /* MKMapViewDelegate implementation */
+    
+    func mapView(mapView: MKMapView!, didUpdateUserLocation userLocation: MKUserLocation!) {
+    // zoom map to user location when no destination is present
+    // TODO: Update user.location
+    // TODO: Handle zooming when destination and other users' locations are available!
+        println("didUpdateUserLocation")
+        //mapView.setRegion(MKCoordinateRegionMake(userLocation.coordinate, MKCoordinateSpanMake(0.1, 0.1)), animated: true)
+    }
 
 }

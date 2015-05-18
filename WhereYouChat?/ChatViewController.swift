@@ -37,11 +37,12 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Do any additional setup after loading the view.
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "onTimer", userInfo: nil, repeats: true)
+        //TODO: Change this is to [Message]
         messages = [String]()
     }
     
     func onTimer() {
-        
+        //TODO: Modify this function to populate Message object with Parse message data including profile image and location
         var query = PFQuery(className:"Message")
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]?, error: NSError?) -> Void in

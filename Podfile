@@ -3,6 +3,7 @@
 
 target 'WhereYouChat?' do
   pod "Parse"
+  pod "AFNetworking"
 end
 
 target 'WhereYouChat?Tests' do
