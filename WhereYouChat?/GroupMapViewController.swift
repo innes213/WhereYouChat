@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class GroupMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
     var locationManager = locMan

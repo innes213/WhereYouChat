@@ -3,8 +3,4 @@
 //
 
 #import "Parse/Parse.h"
-#import <MapKit/MapKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
-#import <ParseFacebookUtilsV4/PFFacebookUtils.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>

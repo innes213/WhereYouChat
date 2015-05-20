@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import CoreLocation
+
+let currentUserKey = "kCurrentUser"
 
 class LoginViewController: UIViewController {
 
@@ -16,20 +19,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let permissions = ["public_profile"]
-        //PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions: [AnyObject]?)
-        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, block: {
-            (user: PFUser?, error: NSError?) -> Void in
-            if let user = user {
-                if user.isNew {
-                    println("User signed up and logged in through Facebook!")
-                } else {
-                    println("User logged in through Facebook!")
-                }
-            } else {
-                println("Uh oh. The user cancelled the Facebook login.")
-            }
-        })
         
     }
     
@@ -41,10 +30,12 @@ class LoginViewController: UIViewController {
     
     @IBAction func onSignIn(sender: AnyObject) {
         
-        PFUser.logInWithUsernameInBackground(emailLabel.text, password:passwordLabel.text) {
+        PFUser.logInWithUsernameInBackground(emailLabel.text, password: passwordLabel.text) {
             (user: PFUser?, error: NSError?) -> Void in
             if user != nil {
                 NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                    //var data = NSJSONSerialization.dataWithJSONObject(user!, options: nil, error: nil)
+                    //NSUserDefaults.standardUserDefaults().setObject(data, forKey: currentUserKey)
                     self.performSegueWithIdentifier("loginToMapSegue", sender: self)
                 })
             } else {
@@ -62,7 +53,10 @@ class LoginViewController: UIViewController {
         user.password = passwordLabel.text
         user.email = user.username
         // other fields can be set just like with PFObject
-        //user["location"] = CLLocation()
+        //user["location"] = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+        user["latitude"] = 0
+        user["longitude"] = 0
+        user["profileImageUrl"] = "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTrpLMDviofj2H6qiq7ywujMLKJ_5pqCmPruNnmN1XczRh6OYxK7Q"
         
         user.signUpInBackgroundWithBlock {
             (succeeded: Bool, error: NSError?) -> Void in
@@ -72,8 +66,10 @@ class LoginViewController: UIViewController {
                 let alert = UIAlertView(title: "Error", message: errorString! as String, delegate: nil, cancelButtonTitle: "Ok")
                 alert.show()
                 
-            } else {
+            } else {                
                 NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                    //var data = NSJSONSerialization.dataWithJSONObject(user, options: nil, error: nil)
+                    //NSUserDefaults.standardUserDefaults().setObject(data, forKey: currentUserKey)
                     self.performSegueWithIdentifier("loginToMapSegue", sender: self)
                 })
             }

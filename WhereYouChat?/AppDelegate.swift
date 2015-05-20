@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 //Global location manager
 var locMan: CLLocationManager?
@@ -22,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locMan!.requestAlwaysAuthorization()
         
         Parse.setApplicationId("bIy1b4M5nYkOufpCuf57zz02a3bX80r0wlJMygWE", clientKey: "1BZa2kr9IJRjZ8Bl5ZcunHqOGNxlpasdp0UoiWfn")
-        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        
         return true
     }
     
@@ -41,18 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
     
-    func application(application: UIApplication,
-        openURL url: NSURL,
-        sourceApplication: String?,
-        annotation: AnyObject?) -> Bool {
-            return FBSDKApplicationDelegate.sharedInstance().application(application,
-                openURL: url,
-                sourceApplication: sourceApplication,
-                annotation: annotation)
-    }
-    
     func applicationDidBecomeActive(application: UIApplication) {
-        FBSDKAppEvents.activateApp()
+
     }
     
 }
